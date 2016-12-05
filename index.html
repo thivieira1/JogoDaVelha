@@ -1,0 +1,37 @@
+<html>
+	<head> 
+		<meta charset="UTF-8">
+		<meta name="description" content="Conteúdo da aula 3">
+		<meta name="keyword" content="aula, html5, css, javascript">
+		<meta name="author" content="Thiago Vieira Pinto| thi_vieira@live.com">
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="js/gameLoop.js"></script>
+		<title> Jogo da Velha</title>	
+	</head>
+		<body>
+			<div class="placar">
+				<div class="j1">0</div>
+				<div class="jx">X</div>
+				<div class="j2">0</div>
+			</div>
+			<div class="boxJogo">
+				<form name = "gameLoop" class "qqrcoisa" method ="post">
+					<input type="button" name="sqr1" class="jogo" onclick="rodada(this);">
+					<input type="button" name="sqr2" class="jogo" onclick="rodada(this);">
+					<input type="button" name="sqr3" class="jogo" onclick="rodada(this);">
+					<br>
+					<input type="button" name="sqr4" class="jogo" onclick="rodada(this);">
+					<input type="button" name="sqr5" class="jogo" onclick="rodada(this);">
+					<input type="button" name="sqr6" class="jogo" onclick="rodada(this);">
+					<br>
+					<input type="button" name="sqr7" class="jogo" onclick="rodada(this);">
+					<input type="button" name="sqr8" class="jogo" onclick="rodada(this);">
+					<input type="button" name="sqr9" class="jogo" onclick="rodada(this);">
+				</form>
+			</div>
+				<script type="text/javascript">
+					reset();
+				</script>
+		</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Pagina Jogo da Velha">
+		<meta name="keyword" content="aula, html5, css, javascript">
+		<meta name="author" content="Thiago Vieira Pinto | thi_vieira@live.com | RA:1510394">
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="js/gameLoop.js"></script>
+
+		
+		<!-- FONTES DO SITE -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<title>JogoDaVelha</title>
+	</head>
+	<body>
+		<div class="tudo">
+			<header class="topo">
+				<div class="layoutPrincipal">
+					<img src="image/banner.png" alt="bannerPrincipal">
+				</div>
+			</header>
+			<nav class="menuH">
+				<ul class="listaMenu">
+					<li class="itemMenu"><a href="Sobre.html" target="_self" title="Sobre o Desenvolvedor">Sobre o Desenvolvedor</a></li>
+					<li class="itemMenu"><a href="JogodaVelha.html" title="Jogue o jogo da velha favorito dos boleiros">Jogo Da Velha</a></li>
+					<li class="itemMenu"><a href="Contato.html" title="Deixe seu contato">Contato</a></li>
+				</ul>
+			</nav>
+			<nav class="menuV">
+				<ul class="listaMenuV">
+				</ul>
+			</nav>
+			<section class="conteudo">
+				<div class="placar">
+					<div class="j1" id="pJogador">0</div>
+					<div class="jx">X</div>
+					<div class="j2"id="pComputador">0</div>
+				</div>
+				<div class="boxJogo">
+					<form name="gameLoop" class="qqrcoisa" method="post">
+						<input type="button" name="sqr1" class="jogo" onclick="rodada(this);">
+						<input type="button" name="sqr2" class="jogo" onclick="rodada(this);">
+						<input type="button" name="sqr3" class="jogo" onclick="rodada(this);">
+						<br>
+						<input type="button" name="sqr4" class="jogo" onclick="rodada(this);">
+						<input type="button" name="sqr5" class="jogo" onclick="rodada(this);">
+						<input type="button" name="sqr6" class="jogo" onclick="rodada(this);">
+						<br>
+						<input type="button" name="sqr7" class="jogo" onclick="rodada(this);">
+						<input type="button" name="sqr8" class="jogo" onclick="rodada(this);">
+						<input type="button" name="sqr9" class="jogo" onclick="rodada(this);">
+					</form>
+				</div>
+				<script type="text/javascript">
+					reset();
+				</script>
+			</section>
+			<footer class="rodape"></footer>
+		</div>
+	</body>
+</html>
